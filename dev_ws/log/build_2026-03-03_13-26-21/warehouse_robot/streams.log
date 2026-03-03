@@ -1,0 +1,51 @@
+[0.007s] Invoking command in '/home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jbeta/robotics/warehouse_robot/dev_ws/src/warehouse_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot
+[0.126s] -- The C compiler identification is GNU 11.4.0
+[0.221s] -- The CXX compiler identification is GNU 11.4.0
+[0.231s] -- Detecting C compiler ABI info
+[0.303s] -- Detecting C compiler ABI info - done
+[0.312s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.312s] -- Detecting C compile features
+[0.313s] -- Detecting C compile features - done
+[0.316s] -- Detecting CXX compiler ABI info
+[0.386s] -- Detecting CXX compiler ABI info - done
+[0.392s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.393s] -- Detecting CXX compile features
+[0.393s] -- Detecting CXX compile features - done
+[0.398s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.532s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.589s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.622s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.694s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.696s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.697s] -- Added test 'lint_cmake' to check CMake code style
+[0.698s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.699s] -- Added test 'xmllint' to check XML markup files
+[0.700s] -- Configuring done
+[0.703s] -- Generating done
+[0.704s] -- Build files have been written to: /home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot
+[0.709s] Invoked command in '/home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jbeta/robotics/warehouse_robot/dev_ws/src/warehouse_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot
+[0.711s] Invoking command in '/home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot -- -j8 -l8
+[0.744s] Invoked command in '/home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot -- -j8 -l8
+[0.752s] Invoking command in '/home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot
+[0.758s] -- Install configuration: ""
+[0.758s] -- Execute custom install script
+[0.758s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/empty.yaml
+[0.765s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/description/robot.urdf.xacro
+[0.773s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/launch/rsp.launch.py
+[0.781s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/worlds/empty.world
+[0.788s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/ament_index/resource_index/package_run_dependencies/warehouse_robot
+[0.796s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/ament_index/resource_index/parent_prefix_path/warehouse_robot
+[0.804s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/environment/ament_prefix_path.sh
+[0.811s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/environment/ament_prefix_path.dsv
+[0.819s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/environment/path.sh
+[0.825s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/environment/path.dsv
+[0.833s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/local_setup.bash
+[0.842s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/local_setup.sh
+[0.850s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/local_setup.zsh
+[0.857s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/local_setup.dsv
+[0.864s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/package.dsv
+[0.871s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/ament_index/resource_index/packages/warehouse_robot
+[0.879s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/cmake/warehouse_robotConfig.cmake
+[0.886s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/cmake/warehouse_robotConfig-version.cmake
+[0.893s] -- Symlinking: /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/package.xml
+[0.902s] Invoked command in '/home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot
