@@ -1,7 +1,10 @@
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/empty.yaml
+/home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/view_bot.rviz
+/home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/description/gazebo_control.xacro
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/description/inertial_macros.xacro
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/description/robot.urdf.xacro
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/description/robot_core.xacro
+/home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/launch/launch_sim.launch.py
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/launch/rsp.launch.py
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/worlds/empty.world
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/ament_index/resource_index/package_run_dependencies/warehouse_robot
