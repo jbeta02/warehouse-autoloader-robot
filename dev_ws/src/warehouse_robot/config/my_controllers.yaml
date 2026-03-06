@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 30
+    update_rate: 1000
     use_sim_time: true
 
     diff_cont:
@@ -11,7 +11,7 @@ controller_manager:
 
 diff_cont:
   ros__parameters:
-    publish_rate: 50.0 # will be throttled by controller_manager update rate, but garantees it will be caught each loop
+    publish_rate: 1000.0 # will be throttled by controller_manager update rate, but garantees it will be caught each loop
     base_frame_id: base_link
 
     left_wheel_names: ['left_wheel_joint']

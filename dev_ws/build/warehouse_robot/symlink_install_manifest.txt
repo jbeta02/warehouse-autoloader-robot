@@ -1,5 +1,7 @@
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/drive_bot.rviz
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/empty.yaml
+/home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/gazebo_params.yaml
+/home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/laser_scan.rviz
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/my_controllers.yaml
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/config/view_bot.rviz
 /home/jbeta/robotics/warehouse_robot/dev_ws/install/warehouse_robot/share/warehouse_robot/description/gazebo_control.xacro
