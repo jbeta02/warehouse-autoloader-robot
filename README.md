@@ -3,6 +3,10 @@ install humble on ubuntu 22.04
 install xacro
 install joint state publisher gui
 sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
+install slam tool box
+isntall nav2
+sudo apt install python3-rosinstall
+sudo apt install python3-catkin-pkg
 
 source install/setup.bash
 colcon build --symlink-install
@@ -13,6 +17,8 @@ viz2 -d src/warehouse_robot/config/view_bot.rviz
 ros2 run joint_state_publisher_gui joint_state_publisher_gui
 
 ros2 launch warehouse_robot launch_sim.launch.py
+
+ros2 launch slam_toolbox online_async_launch.py params_file:=./src/warehouse_robot/config/mapper_params_online_async.yaml use_sim_time:=true
 
 
 testing:

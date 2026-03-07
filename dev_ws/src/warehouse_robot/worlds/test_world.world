@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+        <uri>file:///home/jbeta/robotics/warehouse_robot/dev_ws/src/warehouse_robot/worlds/warehouse_building</uri>
+        <pose>-2.0 4 0 0 0 0</pose>
+    </include>
+    
+    <include>
+        <uri>file:///home/jbeta/robotics/warehouse_robot/dev_ws/src/warehouse_robot/worlds/warehouse_models/aws_robomaker_warehouse_Bucket_01</uri>
+        <pose>-2 0 0 0 0 0</pose>
+    </include>
+    
+  </world>
+</sdf>
