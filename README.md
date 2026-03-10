@@ -20,6 +20,7 @@ Transporation robot is triggered to a loading station. The robot autonomously na
 - Created custom urdf file for robot (using simplified robot, finalized version is work in progress).
 
 ### Loader Arm
+- Using Franka Emika Panda Arm for cargo loading and unloading.
 - Using ROS2 Control for interacting with robot hardware.
 - Custom launch file for starting simulation and spawn robot.
 - Using MoveIt to control robot arm and trajectory execution (Work in progress).
