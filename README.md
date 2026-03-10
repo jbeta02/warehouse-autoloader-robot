@@ -1,6 +1,6 @@
 # Warehouse Autoloader Robot
 
-Simulated warehouse robot capable of navigating warehouse autonomously using ROS2's slam-toolbox and nav2 stacks. A Franka Emika Panda robot arm is used to load and unload the robot with cargo. Simulated using Gazebo. 
+Simulated warehouse robot capable of autonomous navigation and autonomous loading and unloading of cargo.
 
 Transporation robot is triggered to a loading station. The robot autonomously navigates to the loading station then gets loaded with cargo by the Panda arm. After loading is complete, the robot will navigate to the unloading station where another Panda arm will unload the transpotation robot. Finally, the robot will move to its docking station until a new mission is triggered. 
 
