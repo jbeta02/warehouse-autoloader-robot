@@ -1,28 +1,42 @@
-setup:
-install humble on ubuntu 22.04
-install xacro
-install joint state publisher gui
-sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
-install slam tool box
-isntall nav2
-sudo apt install python3-rosinstall
-sudo apt install python3-catkin-pkg
+# Warehouse Autoloader Robot
 
-source install/setup.bash
-colcon build --symlink-install
+Simulated warehouse robot capable of navigating warehouse autonomously using ROS2's slam-toolbox and nav2 stacks. A Franka Emika Panda robot arm is used to load and unload the robot with cargo. Simulated using Gazebo. 
 
-running:
-ros2 launch warehouse_robot rsp.launch.py use_sim_time:=true
-viz2 -d src/warehouse_robot/config/view_bot.rviz
-ros2 run joint_state_publisher_gui joint_state_publisher_gui
+## Tech Stack:
 
-ros2 launch warehouse_robot launch_sim.launch.py
+### Simulation and Testing:
+- Custom and modified prebuilt urdf models of robots.
+- Gazebo Classic for simulating robot usage in warehouse environment.
+- RVIZ to test ROS2 states of robot.
 
-ros2 launch slam_toolbox online_async_launch.py params_file:=./src/warehouse_robot/config/mapper_params_online_async.yaml use_sim_time:=true
+### Transportation Robot
+- Using slam_toolbox for localization and map creation.
+- using Nav2 for robot navigation.
+- Developed custom launch file for starting simulation, Rviz, spawn robot, and load warehouse world.
+- Created custom urdf file for robot (using simplified robot, finalized version is work in progress).
 
+### Loader Arm
+- Using ROS2 Control for interacting with robot hardware.
+- Custom launch file for starting simulation and spawn robot.
+- Using MoveIt to control robot arm and trajectory execution.
+- (Work in progress)
 
-testing:
-to teleop robot: ros2 run teleop_twist_keyboard teleop_twist_keyboard
-to test ros2_control setup: ros2 control list_hardware_interfaces
-use if publishing to diff_cont/cmd_vel_unstamped: ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
-open rviz: rviz2 -d src/warehouse_robot/config/laser_scan.rviz
+**Work in Progress. Full readme coming soon**
+
+Recently accomplished: Successful SLAM and navigation tests on test transportation robot.
+
+Currently working on: Integrating Panda arm with test transportation robot. 
+
+Next: Add finilzed transportation robot model into Gazebo
+
+<div align="center">
+    <img src="assets/simulation_side.png" alt="design" width="75%">
+</div>
+
+<div align="center">
+    <img src="assets/side_by_side.png" alt="design" width="75%">
+</div>
+
+<div align="center">
+    <img src="assets/panda_arm.png" alt="design" width="75%">
+</div>
