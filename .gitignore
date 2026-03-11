@@ -1,3 +1,7 @@
 /dev_ws/log
 /dev_ws/build
 /dev_ws/install
+
+/scripts/log
+/scripts/build
+/scripts/install
