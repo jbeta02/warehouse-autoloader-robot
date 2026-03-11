@@ -1,0 +1,36 @@
+setup:
+install humble on ubuntu 22.04
+install xacro
+install joint state publisher gui
+sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
+install slam tool box
+isntall nav2
+sudo apt install ros-humble-moveit
+sudo apt install ros-humble-moveit-py
+sudo apt install ros-humble-moveit-resources-panda-moveit-config
+sudo apt install ros-humble-franka-msgs
+sudo apt install ros-humble-franka-description
+
+source install/setup.bash
+colcon build --symlink-install
+
+running:
+ros2 launch warehouse_robot rsp.launch.py use_sim_time:=true
+viz2 -d src/warehouse_robot/config/view_bot.rviz
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
+
+ros2 launch warehouse_robot launch_sim.launch.py
+
+ros2 launch slam_toolbox online_async_launch.py params_file:=./src/warehouse_robot/config/mapper_params_online_async.yaml use_sim_time:=true
+
+
+testing:
+to teleop robot: ros2 run teleop_twist_keyboard teleop_twist_keyboard
+to test ros2_control setup: ros2 control list_hardware_interfaces
+use if publishing to diff_cont/cmd_vel_unstamped: ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
+open rviz: rviz2 -d src/warehouse_robot/config/laser_scan.rviz
+to force kill gazebo: killall -9 gazebo gzserver gzclient
+delete artifacts: rm -rf build install log
+to remove sudo priv due to docker access: sudo chown -R $USER:$USER build install log
+see docker containers: docker ps -a
+start container: docker start -ai [CONTAINER_ID_OR_NAME]
