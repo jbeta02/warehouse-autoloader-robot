@@ -1,1 +1,0 @@
-/home/jbeta/robotics/warehouse_robot/dev_ws/build/warehouse_robot/ament_cmake_core/warehouse_robotConfig-version.cmake

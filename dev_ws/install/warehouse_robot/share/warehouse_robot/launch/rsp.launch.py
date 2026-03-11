@@ -1,1 +1,0 @@
-/home/jbeta/robotics/warehouse_robot/dev_ws/src/warehouse_robot/launch/rsp.launch.py
