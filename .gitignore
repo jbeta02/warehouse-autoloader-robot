@@ -5,3 +5,5 @@
 /scripts/log
 /scripts/build
 /scripts/install
+
+/dev_ws/src/warehouse_arm/warehouse_arm/__pycache__

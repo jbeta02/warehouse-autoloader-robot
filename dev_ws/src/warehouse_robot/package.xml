@@ -3,7 +3,7 @@
 <package format="3">
   <name>warehouse_robot</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Warehouse Robot Main package, navigation</description>
   <maintainer email="my_email@email.com">MY NAME</maintainer>
   <license>TODO: License declaration</license>
 
