@@ -34,13 +34,29 @@ Next: Add finilzed transportation robot model into Gazebo
 
 ## Usage
 
+### Setup Docker
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sudo sh get-docker.sh
+
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+```
+Log out of current user
+
 ### Run Simulation with Docker
+
 ```
 git clone https://github.com/jbeta02/warehouse-autoloader-robot
 
 cd warehouse-autoloader-robot
 
 docker build -t warehouse_robot_env .
+
+chmod u+x /scripts/run_docker.sh
+chmod u+x /scripts/run_robot_test.sh
 
 ./scripts/run_docker.sh
 
