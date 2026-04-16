@@ -59,7 +59,6 @@ chmod u+x /scripts/run_docker.sh
 chmod u+x /scripts/run_robot_test.sh
 
 ./scripts/run_docker.sh
-
 ./scripts/run_robot_test.sh
 ```
 
